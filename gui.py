@@ -6,8 +6,11 @@ window.title("Le Chiffre")
 window.geometry('700x700')
 window.configure(bg="black")
 
-lb1=Label(window, text="Le Chiffre", bg="#282828", fg="white", font=("Roboto", 30), padx=10, pady=10)
-lb1.place(relx=.5, rely=.1,anchor="center")
+lb1=Label(window, text="Le Chiffre", bg="black", fg="white", font=("Roboto", 30), padx=5, pady=5)
+lb1.place(relx=.5, rely=0.06,anchor="center")
+
+lb2=Label(window, text="Vigenère cipher", bg="black", fg="white", font=("Roboto", 9), padx=5, pady=5)
+lb2.place(relx=.5, rely=0.11,anchor="center")
 
 arr = {0:['A','a'],
 1:['B','b'],
@@ -54,9 +57,7 @@ def encrypt():
             spaces.append(i)
             
     msg = ''.join(msg.split())
-    
-    print(msg)
-    print(type(msg))
+
     if(len(key)<len(msg)):
         new_key = key*len(msg)
         new_key = new_key[0:len(msg)]
@@ -143,7 +144,10 @@ def decrypt():
     textbox_3.delete(1.0, END)
     textbox_3.insert('end -1 chars', w)
     
-    
+label1 = Label(window, text="Text to be encrypted/decrypted", font=("Roboto", 8), bg="black", fg="white")
+label2 = Label(window, text="Key", font=("Roboto", 8), bg="black", fg="white")
+label3 = Label(window, text="Encrypted/Decrypted text", font=("Roboto", 8), bg="black", fg="white")
+
 textbox_1 = Text(window, height=4, width=35, font="Roboto 13")
 textbox_2 = Text(window, height=1, width=35, font="Roboto 13")
 textbox_3 = Text(window, height=4, width=35, font="Roboto 13")
@@ -153,12 +157,13 @@ radio_button2 = Radiobutton(window, text='Decrypt', variable='answer', value=2, 
 
 clear_button = Button(window, text='Clear', command=clear)
 
+label1.place(relx=.5, rely=.21, anchor="center")
+label2.place(relx=.5, rely=.41, anchor="center")
+label3.place(relx=.5, rely=.66, anchor="center")
+
 textbox_1.place(relx=.5, rely=.3, anchor="center")
 textbox_2.place(relx=.5, rely=.45, anchor="center")
-textbox_3.place(relx=.5, rely=.7, anchor="center")
-
-#textbox_1.insert('end -1 chars','Enter the plaintext or ciphertext here')
-#textbox_2.insert('end -1 chars', 'Enter the key here')
+textbox_3.place(relx=.5, rely=.75, anchor="center")
 
 radio_button1.place(relx=.45, rely=.55, anchor="center")
 radio_button2.place(relx=.55, rely=.55, anchor="center")
