@@ -25,3 +25,7 @@
   </tr>
 </table>
 </p>
+
+<h2>License</h2>
+
+<a href="https://github.com/InvincibleJuggernaut/Le-Chiffre/blob/main/LICENSE">MIT License</a>
