@@ -4,7 +4,7 @@
 
 <p>Le-Chiffre implements the Vigenère cipher through both a python script as well as a GUI. <a href="https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher">Vigenère cipher</a> is a simple poly-alphabetic substitution cipher.</p>
 
-<h2>Working</h2>
+<h2>Demo</h2>
 
 <p align="center">
 <img src="Assets/gui.PNG" width="400">
