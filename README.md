@@ -7,7 +7,7 @@
 <h2>Working</h2>
 
 <p align="center">
-<img src="Assets/gui.PNG" width="500">
+<img src="Assets/gui.PNG" width="400">
 </p>
 <p align="center">
   <b>GUI interface</b>
@@ -16,8 +16,8 @@
 <p align="center">
 <table>
   <tr>
-  <td><img src="Assets/encryption.PNG"></td>
-  <td><img src="Assets/decryption.PNG"></td>
+  <td><img src="Assets/encryption.PNG" width="400"></td>
+  <td><img src="Assets/decryption.PNG" width="400"></td>
   </tr>
   <tr>
   <td><p align="center">Encryption</p></td>
